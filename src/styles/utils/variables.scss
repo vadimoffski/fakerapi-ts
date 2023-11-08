@@ -1,0 +1,40 @@
+:root {
+  // font family
+  --font-family-primary: 'Open Sans';
+  --font-family-secondary: 'Merriweather';
+
+  // font style
+  --font-style-normal: normal: 
+
+  // font colors
+  --primary-fc: #4A4A68;
+  --secondary-fc: #fff;
+  --btn-primary-fc: #fff;
+
+
+  // font sizes
+  --title-fs: 24px;
+  --title-mob-fs: 20px;
+  --subtitle-fs: 18px;
+  --p-fs: 18px;
+  --input-fs: 16px;
+  --btn-fs: 18px;
+
+  // font weight
+  --title-fw: 700;
+  --subtitle-fw: 700;
+  --p-fw: 400;
+  --input-fw: 600;
+  --btn-fw: 600;
+
+  // bg-colors
+  --body-bgc: #f9f9f9;
+  --form-bgc: #edeff0;
+  --input-bgc: #fff;
+  --card-bgc: #fff;
+  --btn-bgc-primary: #0d326c;
+  --btn-bgc-secondary: #0e4399;
+
+  // border-colors
+  --border-color: rgba(234, 234, 237, 0.5);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Data Retrieval</title>
+  </head>
+  <body>
+    <!-- form -->
+    <div class="container">
+      <h1 class="title">Виберіть дату народження</h1>
+      <form class="date-form js-date-form">
+        <div class="date-form__input-wrapper">
+          <label for="startDate" class="date-form__label">Від:</label>
+          <input
+            type="date"
+            id="startDate"
+            required
+            class="date-form__input js-startDate"
+          />
+        </div>
+        <div class="date-form__input-wrapper">
+          <label for="endDate" class="date-form__label">До:</label>
+          <input
+            type="date"
+            id="endDate"
+            required
+            class="date-form__input js-endDate"
+          />
+        </div>
+        <button
+          id="submitBtn"
+          type="submit"
+          class="date-form__button js-submitBtn"
+        >
+          Оновити
+        </button>
+      </form>
+    </div>
+    <!-- my results -->
+    <div class="results js-results"></div>
+    <!-- loader -->
+    <div class="lds-ring js-lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
