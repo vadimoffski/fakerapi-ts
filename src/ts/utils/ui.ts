@@ -5,7 +5,7 @@ import {
   CreateResultItemType,
   DisplayErrorType,
   DisplayResultsType,
-  setLoaderType,
+  SetLoaderType,
 } from "./types";
 
 export const createListItem: CreateListItemType = (icon, text) => {
@@ -22,7 +22,7 @@ export const createListItem: CreateListItemType = (icon, text) => {
 
 export const createResultItem: CreateResultItemType<IPerson> = (person) => {
   const resultItem = document.createElement("div");
-  resultItem.classList.add("result__item");
+  resultItem.classList.add("results__item");
   const { firstname, lastname, email, phone, birthday, gender, website } =
     person;
   const ul = document.createElement("ul");
@@ -52,17 +52,17 @@ export const displayResults: DisplayResultsType = (data) => {
 export const displayError: DisplayErrorType = (error) => {
   const { resultsContainer: container } = DOM_ELEMENTS;
   if (!container) return;
-  container.classList.toggle("error-container", !!error);
+  container.classList.toggle("error", !!error);
   if (error) {
     container.innerHTML = "";
     const p = document.createElement("p");
-    p.classList.add("error");
+    p.classList.add("error__description");
     p.textContent = error;
     container.appendChild(p);
   }
 };
 
-export const setLoader: setLoaderType = (switcher) => {
+export const setLoader: SetLoaderType = (switcher) => {
   const { loader, body, submitBtn } = DOM_ELEMENTS;
   if (loader && body && submitBtn) {
     submitBtn.disabled = switcher;

@@ -37,3 +37,9 @@ export interface IPersonParams extends Partial<IDefaultParams> {
   _birthday_start: string;
   _birthday_end: string;
 }
+
+export interface IDateRange {
+  oneDayAgo: string;
+  today: string;
+  minDate: string;
+}
