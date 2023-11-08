@@ -8,59 +8,61 @@
   justify-content: space-between;
   align-items: flex-end;
   gap: 24px;
-}
 
-.date-form__input-wrapper {
-  flex: 0 1 33.333%;
-  display: flex;
-  flex-direction: column;
-}
-
-.date-form__label {
-  font-size: var(--input-fs);
-  font-weight: var(--input-fw);
-  color: var(--primary-fc);
-  margin-bottom: 8px;
-}
-
-.date-form__input {
-  height: 51px;
-  padding: 13px 24px;
-  font-size: var(--input-fs);
-  font-weight: var(--input-fw);
-  border: 1px solid var(--border-color);
-}
-
-.date-form__button {
-  flex: 0 1 33.333%;
-  height: 51px;
-  cursor: pointer;
-  background: var(--btn-bgc-primary);
-  color: var(--btn-primary-fc);
-  border: none;
-  padding: 13px 32px;
-  &:hover {
-    background: var(--btn-bgc-secondary);
+  &__input-wrapper {
+    flex: 0 1 33.333%;
+    display: flex;
+    flex-direction: column;
   }
-  &:disabled,
-  &[disabled] {
-    border: 1px solid #999999;
-    background-color: #cccccc;
-    color: #666666;
-  }
-}
 
-@media (max-width: 524px) {
-  .date-form {
+  &__label {
+    font-size: var(--input-fs);
+    font-weight: var(--input-fw);
+    color: var(--primary-fc);
+    margin-bottom: 8px;
+  }
+
+  &__input {
+    height: 51px;
+    padding: 13px 24px;
+    font-size: var(--input-fs);
+    font-weight: var(--input-fw);
+    border: 1px solid var(--border-color);
+  }
+
+  &__button {
+    flex: 0 1 33.333%;
+    height: 51px;
+    cursor: pointer;
+    background: var(--btn-bgc-primary);
+    color: var(--btn-primary-fc);
+    border: none;
+    padding: 13px 32px;
+
+    &:hover {
+      background: var(--btn-bgc-secondary);
+    }
+
+    &:disabled,
+    &[disabled] {
+      border: 1px solid #999999;
+      background-color: #cccccc;
+      color: #666666;
+    }
+  }
+
+  @media (max-width: 524px) {
     flex-direction: column;
     align-items: center;
-  }
-  .date-form__input-wrapper {
-    flex: 1 1 auto;
-    width: 100%;
-  }
-  .date-form__button {
-    flex: 1 1 auto;
-    width: 100%;
+
+    &__input-wrapper {
+      flex: 1 1 auto;
+      width: 100%;
+    }
+
+    &__button {
+      flex: 1 1 auto;
+      width: 100%;
+    }
   }
 }
